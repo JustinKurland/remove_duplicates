@@ -3,9 +3,9 @@ import numpy as np
 import pandas_flavor as pf
 
 @pf.register_dataframe_method
-def drop_duplicates(df):
+def remove_duplicates(df):
     """
-    Drop duplicated columns.
+    Remove duplicated columns.
  
     Args:
          df ([pandas.DataFrame]):
