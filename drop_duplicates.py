@@ -9,10 +9,10 @@ def drop_duplicates(df):
  
     Args:
          df ([pandas.DataFrame]):
-          Dataframe of all columns to be evaluated.
-    Output:
-        df: dataframe with duplicated columns droppedd. 
-            Note that the first evaluated column of a duplicate pair is kept.
+            Dataframe of all columns to be evaluated.
+    Returns:
+        df ([pandas.DataFrame]): Dataframe with duplicated columns dropped. 
+        Note that the first evaluated column of a duplicate is kept.
     """
     print(f'Duplicate columns to be dropped:')
 
