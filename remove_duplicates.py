@@ -17,9 +17,7 @@ def remove_duplicates(df):
     print(f'Duplicate columns to be removed:')
 
     nums = df._get_numeric_data().columns.tolist()
-    df_num = df[nums].astype(float)
-    df_str = df[df.columns.difference(nums)]
-    df = pd.concat([df_num,df_str], axis=1)
+    df[nums] = df[nums].astype(float)
     dupe_cols = []
 
     for i in range(len(df.columns)):
